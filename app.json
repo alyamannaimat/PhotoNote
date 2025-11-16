@@ -1,0 +1,60 @@
+{
+  "expo": {
+    "name": "PhotoNote",
+    "slug": "PhotoNote",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/appLogo.jpg",
+    "scheme": "photonote",
+    "platforms": ["android", "ios", "web"],
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "icon": "./assets/images/appLogo.jpg",
+      "supportsTablet": true
+    },
+    "android": {
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.aynco.PhotoNote"
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "react-native-google-mobile-ads",
+        {
+          "android_app_id" : "ca-app-pub-8036446032466804~4331197095",
+          "androidAppId" : "ca-app-pub-8036446032466804~4331197095",
+          "ios_app_id" : "ca-app-pub-8036446032466804~8599128058",
+          "iosAppId" : "ca-app-pub-8036446032466804~8599128058"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0506b5ef-b5a1-4426-8e5d-7a65afe4049b"
+      }
+    }
+  }
+}
